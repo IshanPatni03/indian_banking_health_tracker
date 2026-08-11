@@ -14,9 +14,9 @@ warnings.filterwarnings("ignore")
 
 from sqlalchemy import create_engine
 
-# ── MySQL Connection ─────────────────────────────────────────────────────────
+
 MYSQL_USER     = "root"
-MYSQL_PASSWORD = "Patniishan*2002"   # ← same password as clean_data_mysql.py
+MYSQL_PASSWORD = "Patniishan*2002"   
 MYSQL_HOST     = "localhost"
 MYSQL_DB       = "rbi_banking"
 
@@ -27,7 +27,7 @@ engine = create_engine(
 import os
 os.makedirs("charts", exist_ok=True)
 
-# ── Style ────────────────────────────────────────────────────────────────────
+
 plt.rcParams.update({
     "figure.facecolor": "#F9FAFB",
     "axes.facecolor":   "#F9FAFB",
